@@ -15,6 +15,10 @@
     background-color: #151532;
 }
 
+.container {
+    max-width: 35%;
+    margin: 0 auto;
+}
 .dark-mode {
     background-image: url(../images/bg-desktop-light.jpg);
     width: 100vw;
@@ -32,10 +36,6 @@
     background-color: #151532;
 }
 
-.container {
-    max-width: 35%;
-    margin: 0 auto;
-}
 
 header {
     padding-top: 80px;
@@ -184,4 +184,14 @@ h1 {
 
 .deleted {
     display: none;
+}
+
+
+@media (max-width: 600px){
+    .container{
+        max-width: 85%;
+    }
+    header{
+        padding-top: 40px;
+    }
 }
