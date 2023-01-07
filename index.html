@@ -19,13 +19,57 @@
             <label for="mode-input" class="label"></label>
         </div>
     </header>
-    <main class="container">
+    <main class="container" id="main">
         <form class="form">
             <p class="round"></p>
            <input class="todo-input" type="text" placeholder="Create a new todo" required>
            <button class="btn">add</button>
+           <select name="select" id="filter">
+            <option value="all">All</option>
+            <option value="active">active</option>
+            <option value="completed">completed</option>
+           </select>
         </form>
         <ul class="todo-list"></ul>
+
+        <!-- <div class="filter">
+            <div class="filter__counter">
+                <p>items left</p>
+            </div>
+            <div class="filter__focus">
+                <label class="filter-all">
+                    All
+                    <input type="radio" name="radio" >
+                </label>
+                <label class="filter-active">
+                    Active
+                    <input type="radio" name="radio" >
+                </label>
+                <label class="filter-completed">
+                    Completed
+                    <input type="radio" name="radio" >
+                </label>
+            </div>
+            <div class="filter__delete">
+                <label>
+                Clear completed
+                <input type="radio">
+                </label>
+            </div>
+        </div> -->
+        <!-- <div class="filter">
+            <div class="filter__counter">
+                <p>items left</p>
+            </div>
+            <div class="filter__focus">
+                <p class="filter-all">All</p>
+                <p class="filter-active">Active</p>
+                <p class="filter-completed">Completed</p>
+            </div>
+            <div class="filter__delete">
+                <p>Clear Completed</p>
+            </div>
+        </div> -->
     </main>
 </body>
 </html>

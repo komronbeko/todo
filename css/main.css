@@ -16,7 +16,7 @@
 }
 
 .container {
-    max-width: 35%;
+    max-width: 40%;
     margin: 0 auto;
 }
 .dark-mode {
@@ -98,12 +98,13 @@ h1 {
 }
 
 .todo-input {
-    background-color: inherit;
-    border: none;
-    width: 70%;
+    width: 50%;
     font-size: 24px;
     color: aliceblue;
-    padding: 8px;
+    padding: 2px;
+    background-color: inherit;
+    border: 1px solid rgb(171, 162, 162);
+    border-radius: 6px;
 }
 
 .round {
@@ -117,7 +118,7 @@ h1 {
     background-color: inherit;
     border: 1px solid rgb(171, 162, 162);
     border-radius: 6px;
-    padding: 10px;
+    padding: 0 15px 4px;
     color: rgb(171, 162, 162);
     font-size: 24px;
 }
@@ -186,12 +187,72 @@ h1 {
     display: none;
 }
 
+#filter{
+    background-color: initial;
+    padding: 8px;
+    margin-left: 6px;
+    border-radius: 6px;
+}
+
+#filter option{
+    background-color: #151532;
+}
+
+
+
+
+
 
 @media (max-width: 600px){
     .container{
-        max-width: 85%;
+        max-width: 90%;
     }
     header{
         padding-top: 40px;
     }
+    .form{
+        padding: 10px;
+    }
+    .todo-input{
+        width: 40%;
+        font-size: 18px;
+    }
+    .round{
+        width: 24px;
+        height: 24px;
+    }
+    .btn{
+        padding: 4px;
+        font-size: 16px;
+    }
+    #filter{
+        padding: 5px 0;
+        margin-left: 0px;
+        width: 60px;
+    }
+    .header{
+        padding-bottom: 15px;
+    }
+    h1{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .label::after,
+    .mode-input:checked + .label::after{
+        width: 26px;
+        height: 26px;
+    }
+    .item__div{
+        padding: 10px;
+    }
+    .check-btn,
+    .completed .check-btn{
+        width: 26px;
+        height: 26px;
+    }
+    .remove{
+        width: 20px;
+        height: 20px;
+    }
+   
 }
