@@ -68,28 +68,28 @@ todoList.addEventListener("click", function (e) {
 
 filter.addEventListener("click", (e) => {
    // console.log(e.target.value)
-   let option = e.target.value
-  let todoInputs = todoList.childNodes;
-  todoInputs.forEach((todo) => {
-    switch (option) {
-      case "all":
-        todo.style.display = "flex";
-        break;
+   let anoption = e.target.value
+  let todoList__div = todoList.childNodes;
+  todoList__div.forEach((todoList__div__inputs) => {
+    
+    if (anoption === "all"){
+      todoList__div__inputs.style.display = "flex";
+    }
 
-      case "active":
-        if (!todo.classList.contains("completed")) {
-          todo.style.display = "flex";
-        } else {
-          todo.style.display = "none";
-        }
-        break;
-      case "completed":
-        if (todo.classList.contains("completed")) {
-          todo.style.display = "flex";
-        } else {
-          todo.style.display = "none";
-        }
-        break; 
+    if (anoption === "active"){
+      if (todoList__div__inputs.classList.contains("completed")){
+        todoList__div__inputs.style.display = "none"
+      } else{
+        todoList__div__inputs.style.display = "flex"
+      }
+    }
+
+    if (anoption === "completed"){
+      if (todoList__div__inputs.classList.contains("completed")){
+        todoList__div__inputs.style.display = "flex"
+      } else {
+        todoList__div__inputs.style.display = "none"
+      }
     }
   });
 });
